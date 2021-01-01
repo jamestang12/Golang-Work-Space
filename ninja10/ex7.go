@@ -19,6 +19,8 @@ func main() {
 	for k := 0; k < 100; k ++{
 		fmt.Println(k,<-c)
 	}
+	
+	close(c)
 
 	fmt.Println("about to exit")
 }
